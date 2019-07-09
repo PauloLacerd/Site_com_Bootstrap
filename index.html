@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Site</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand h1 mb-0" href="#">Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSite">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contatos</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navdrop">
+                            Social
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Facebook</a>
+                            <a class="dropdown-item" href="#">Twitter</a>
+                            <a class="dropdown-item" href="#">Instagram</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input type="search" class="form-control mr-2 ml-4" placeholder="Buscar...">
+                    <button class="btn btn-dark" type="submit">Ok</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselSite" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="carouselSite" data-slide-to="0" class="active"></li>
+            <li data-target="carouselSite" data-slide-to="1"></li>
+            <li data-target="carouselSite" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagens/slide01.jpg" class="img-fluid d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>Nullam augue purus, dignissim quis rutrum eget, pellentesque.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/slide02.jpg" class="img-fluid d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Praesent ullamcorper eget ipsum</h3>
+                    <p>Proin egestas, nisl bibendum venenatis condimentum, lacus enim facilisis.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/slide03.jpg" class="img-fluid d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Donec malesuada augue vitae</h3>
+                    <p>Morbi et aliquam magna. Mauris iaculis commodo nisi, vitae.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselSite" rolle="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselSite" rolle="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center my-5">
+                <h1 class="display-4"><i class="fa fa-cogs text-primary" aria-hidden="true"></i> Vivamus semper tincidunt</h1>
+                <p>Cras quis ante at massa lacinia congue quis vestibulum mi. Integer finibus, enim in maximus.</p>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-sm-6 col-md-4">
+                <nav id="navbarVertical" class="navbar navbar-light bg-light">
+                    <nav class="nav nav-pills flex-column">
+
+                        <a class="nav-link" href="#item1">Ut at tempor</a>
+
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ml-3" href="#item1-1">Nulla at nulla</a>
+                            <a class="nav-link ml-3" href="#item1-2">Mauris tristique</a>
+                        </nav>
+
+                        <a class="nav-link my-2" href="#item2">Fusce sed ex</a>
+                        <a class="nav-link my-2" href="#item3">Sed quis est</a>
+
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ml-3" href="#item3-1">Vestibulum ut</a>
+                            <a class="nav-link ml-3" href="#item3-2">Vivamus eu est</a>
+                        </nav>
+
+                    </nav>
+                </nav>
+            </div>
+            <div class="col-sm-6 col-md-8 mb-3">
+                <div class="scrollspySite" data-spy="scroll" data-target="#navbarVertical" data-offset="0">
+                    <h4 id="item1">Ut malesuada tincidunt</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nulla at nulla sed dui porta tincidunt. Mauris tristique lacus justo, a rhoncus lorem semper at.
+                        Aenean ullamcorper egestas ipsum at feugiat. Class aptent taciti sociosqu ad litora torquent
+                        per conubia nostra, per inceptos himenaeos. In et tempor elit. Etiam sagittis id ante ac vehicula.</p>
+
+                    <h5 id="item1-1">Phasellus eleifend</h5>
+                    <p>Aenean lacinia libero eu lacus dictum aliquam. Maecenas urna nisl, tincidunt eget
+                        ullamcorper sed, dapibus at tortor. Integer sagittis scelerisque elit,
+                        venenatis rhoncus diam gravida non. Pellentesque diam est, viverra sed risus nec,
+                        ultricies finibus urna. Sed sit amet suscipit velit.</p>
+
+                    <h5 id="item1-2">Integer ac feugiat</h5>
+                    <p>Integer ac feugiat purus, non rutrum ligula. Cras porttitor nunc vel elementum
+                        auctor. Proin tempus blandit urna sed sodales. Vestibulum laoreet lacus at orci
+                        aliquam, in gravida purus lobortis. Etiam vel efficitur lectus. Fusce dapibus
+                        id neque et semper. Fusce venenatis ante tortor, ac rutrum enim elementum at.</p>
+                
+                    <h4 id="item2">Lorem ipsum dolor</h4>
+                    <p>Mauris massa nibh, congue et tempus sed, venenatis non arcu. Aenean id enim lorem.
+                        Donec lacinia purus nec orci consequat, ac pretium massa condimentum.
+                        Nam mattis est quis ipsum congue placerat. Vivamus tincidunt rhoncus quam, id facilisis
+                        lacus interdum nec. Etiam eget interdum diam, eu tempor arcu.</p>
+
+                    <h4 id="item3">Mauris massa nibh</h4>
+                    <p>In nec sem at justo imperdiet sollicitudin sagittis ut massa. Curabitur vel elit vel leo volutpat sagittis.
+                        Vivamus est urna, imperdiet quis justo at, auctor feugiat justo. Donec gravida at dolor vitae pulvinar.</p>
+            
+                    <h5 id="item3-1">Phasellus eleifend</h5>
+                    <p>Morbi dignissim nulla at purus feugiat sagittis. Quisque ut mi in lacus sagittis
+                        porttitor et ac augue. Class aptent taciti sociosqu ad litora torquent per conubia
+                        nostra, per inceptos himenaeos. Nunc imperdiet cursus bibendum. Nunc viverra ex eu
+                        porttitor interdum. Nam blandit, augue fermentum suscipit fringilla, urna neque
+                        ultricies dui, sit amet molestie turpis nibh bibendum lacus. Suspendisse placerat vestibulum urna, ac blandit dolor viverra eget.
+                        Suspendisse efficitur efficitur purus.</p>
+    
+                    <h5 id="item3-2">Integer ac feugiat</h5>
+                    <p>Quisque a quam magna. Quisque porta, magna in iaculis egestas,
+                        risus tellus porta magna, et sollicitudin libero urna at elit.
+                        Donec at efficitur risus, vel dapibus justo. Fusce placerat
+                        lobortis ex, laoreet facilisis ligula tincidunt et.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-sm-center">
+            <div class="col-sm-6 col-md-4 mb-3">
+                <div class="card mb-5">
+
+                    <img class="card-img-top" src="imagens/item_card_01.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Pellentesque hendrerit</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Vestibulum suscipit laoreet</h6>
+                        <p class="card-text">Pellentesque euismod ultrices arcu, vel tempor ante vehicula et. In mollis a lorem.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Nullam consectetur tincidunt</li>
+                        <li class="list-group-item">Phasellus placerat maximus</li>
+                        <li class="list-group-item">Class aptent taciti sociosqu</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">Clique</a>
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">Clique</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3">
+                <div class="card mb-5">
+
+                    <img class="card-img-top" src="imagens/item_card_02.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Fusce sagittis orci</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Morbi in accumsan mauris</h6>
+                        <p class="card-text">Quisque pretium risus vel ornare semper. Vestibulum non elit nisl. In erat sapien.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Maecenas nec tempor faucibus</li>
+                        <li class="list-group-item">Maecenas a porta leo parturient </li>
+                        <li class="list-group-item">ed purus eros pretium condimentum</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">Clique</a>
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">Clique</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3">
+                <div class="card mb-5">
+
+                    <img class="card-img-top" src="imagens/item_card_03.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Fusce id eleifend</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Cras ut est quis massa</h6>
+                        <p class="card-text">Maecenas nec convallis risus. Cras vel ex metus. Phasellus sit amet est elit, integer.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Aliquam tempus nisi justo</li>
+                        <li class="list-group-item">Phasellus interdum nunc velit</li>
+                        <li class="list-group-item">Donec dignissim fringilla orci</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">Clique</a>
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">Clique</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4"><i class="fa fa-video-camera text-primary" aria-hidden="true"></i> Pellentesque mattis non tellus</h1>
+                    <p class="lead">Cras viverra, ex sed efficitur euismod, lacus dolor volutpat
+                        ex, ut vestibulum orci urna vitae ipsum.</p>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-12">
+                    <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">
+                                Quisque
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">
+                                Aenean
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-pills-03" data-toggle="pill" href="#nav-item-03">
+                                Pellentesque
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="nav-pills-content">
+                        <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="embed-responsive embed-responsive-4by3">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/39URH6cryls"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Ut malesuada sollicitudin sem vitae pulvinar. Suspendisse ultrices
+                                        commodo purus, vel pulvinar erat commodo quis. Nam efficitur porta
+                                        dui eu pulvinar. Aenean suscipit, massa nec aliquet condimentum, odio
+                                        est bibendum urna, quis vulputate mi leo ut ante.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="embed-responsive embed-responsive-4by3">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/39URH6cryls"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p>Donec ut finibus neque. Phasellus diam risus, fermentum lacinia ultricies vitae,
+                                        pharetra egestas nunc. Nunc sagittis placerat leo, auctor sollicitudin metus
+                                        sollicitudin sed. Duis et augue ultricies, rhoncus lacus dapibus, mollis felis.
+                                        Donec tempus nibh vel urna consectetur, id scelerisque odio convallis.
+                                        Sed et imperdiet lectus. Nunc eu ligula finibus, vehicula elit consequat,
+                                        venenatis ipsum. Vestibulum ut dapibus dolor.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-item-03" role="tabpanel">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="embed-responsive embed-responsive-4by3">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/39URH6cryls"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p>Pellentesque fermentum, nisl non iaculis interdum, ipsum ligula cursus arcu,
+                                        id ornare enim augue ut quam. Sed lobortis vehicula dolor placerat facilisis.
+                                        Curabitur ac nisl feugiat, pellentesque felis rhoncus, volutpat ipsum.
+                                        Vestibulum eget velit lorem. Morbi quis tortor purus. Quisque feugiat nisl
+                                        et consectetur bibendum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="form-row">
+            <div class="col-12">
+                <h1 class="display-4 text-center"><i class="fa fa-paper-plane text-primary" aria-hidden="true"></i> Formulário</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-sm-12 col-md-10 col-lg-8">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="inputSobrenome">Nome</label>
+                            <input type="text" class="form-control" id="inputNome" placeholder="Ex: João Paulo">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="inputSobrenome">Sobrenome</label>
+                            <input type="text" class="form-control" id="inputSobrenome" placeholder="Ex: Pereira da Silva">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <label for="inputEnd">Endereço</label>
+                            <input type="text" class="form-control" id="inputEnd" placeholder="Av. A">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="inputCidade">Cidade</label>
+                            <input type="text" class="form-control" id="inputCidade">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="inputEst">Estado</label>
+                            <select class="form-control" id="inputEst">
+                                <option selected>Escolha...</option>
+                                <option>...</option>
+                                <option>...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-2">
+                            <label for="inputCEP">CEP</label>
+                            <input type="text" class="form-control" id="inputCEP">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input"> Desejo receber novidades por e-mail
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-primary">Enviar</button> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col12"><hr></div>
+            <div class="col-sm-4 mb-3">
+                <h3>Bootstrap</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed gravida finibus sagittis. Praesent tincidunt turpis quis
+                    dapibus interdum. Aenean varius convallis mauris, sit amet aliquam
+                    turpis porttitor pretium.</p>
+                    <p>Maecenas nec gravida dolor, eget ullamcorper ex. Quisque rutrum sodales risus.</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Menu</h3>
+                <div class="list-group text-center">
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Perfil</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Serviços</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Depoimentos</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Contatos</a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h3>Social</h3>
+                <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+                    <a class="btn btn-outline-primary" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
+                    <a class="btn btn-outline-info" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a>
+                    <a class="btn btn-outline-warning" href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+                </div>
+            </div>
+            <div class="col-12 mt-5">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">O sucesso não é grantido, mas o fracasso é certo
+                    se você não estiver emocionalmente envolvido em seu trabalho.</p>
+                    <footer class="blockquote-footer">Biz Stone <cite title="Source Title">Fundador do Twitter</cite></footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Donec sodales hendrerit dolor</h5>
+                    <button class="close" data-dismiss="modal" type="button">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aliquam tempus nisi justo, a molestie dolor commodo in.
+                        Phasellus interdum nunc velit, a rhoncus velit tempor sed.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
